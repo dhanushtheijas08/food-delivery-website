@@ -23,10 +23,15 @@ function HeroSection() {
           <Button>Learn More</Button>
         </div>
         <div>
-          <div className="flex"></div>
+          <div className="flex">
+            <img
+              src={face1}
+              alt="sample face"
+              className="h-10 w-10 rounded-full"
+            />
+          </div>
         </div>
       </div>
-
       <div>
         <img src={heroImg} alt="hero section" className="w-[43rem]" />
       </div>
