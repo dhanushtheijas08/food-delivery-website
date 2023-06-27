@@ -1,10 +1,6 @@
 import Button from "../../components/Button.jsx";
 import heroImg from "../../asserts/hero-section/hero-section-img.png";
-import face1 from "../../asserts/hero-section/img-1.jpg";
-import face2 from "../../asserts/hero-section/img-2.jpg";
-import face3 from "../../asserts/hero-section/img-3.jpg";
-import face4 from "../../asserts/hero-section/img-4.jpg";
-import face5 from "../../asserts/hero-section/img-5.jpg";
+
 function HeroSection() {
   return (
     <div className="px-10 bg-orangeLight py-5 flex sm:flex-col lg:flex-row">
