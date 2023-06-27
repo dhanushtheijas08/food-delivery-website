@@ -20,11 +20,7 @@ function HeroSection() {
         </div>
         <div>
           <div className="flex">
-            <img
-              src={face1}
-              alt="sample face"
-              className="h-10 w-10 rounded-full"
-            />
+            
           </div>
         </div>
       </div>
