@@ -1,10 +1,5 @@
 import Button from "../../components/Button.jsx";
-import heroImg from "../../asserts/hero-section/hero-section-img.png";
-// import face1 from "../../asserts/hero-section/img-1.jpg";
-// import face2 from "../../asserts/hero-section/img-2.jpg";
-// import face3 from "../../asserts/hero-section/img-3.jpg";
-// import face4 from "../../asserts/hero-section/img-4.jpg";
-// import face5 from "../../asserts/hero-section/img-5.jpg";
+
 function HeroSection() {
   return (
     <div className="bg-orangeLight py-5 flex flex-col lg:flex-row md:items-center lg:items-start">
@@ -24,7 +19,11 @@ function HeroSection() {
         </div>
         <div>
           <div className="flex">
-
+            <img
+              src={face1}
+              alt="sample face"
+              className="h-10 w-10 rounded-full"
+            />
           </div>
         </div>
       </div>
