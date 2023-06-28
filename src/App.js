@@ -9,6 +9,7 @@ function App() {
       <HeaderPage className="" />
       <HeroSection />
       <MealsPage />
+      
     </div>
   );
 }
