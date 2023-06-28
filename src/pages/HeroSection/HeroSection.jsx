@@ -35,3 +35,11 @@ function HeroSection() {
 }
 
 export default HeroSection;
+/* 
+import heroImg from "../../asserts/hero-section/hero-section-img.png";
+import face1 from "../../asserts/hero-section/img-1.jpg";
+import face2 from "../../asserts/hero-section/img-2.jpg";
+import face3 from "../../asserts/hero-section/img-3.jpg";
+import face4 from "../../asserts/hero-section/img-4.jpg";
+import face5 from "../../asserts/hero-section/img-5.jpg";
+*/
