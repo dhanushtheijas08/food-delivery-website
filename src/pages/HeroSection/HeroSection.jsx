@@ -1,5 +1,5 @@
 import Button from "../../components/Button.jsx";
-
+import heroImg from "../../asserts/hero-section/hero-section-img.png";
 function HeroSection() {
   return (
     <div className="bg-orangeLight py-5 flex flex-col lg:flex-row md:items-center lg:items-start">
@@ -19,11 +19,6 @@ function HeroSection() {
         </div>
         <div>
           <div className="flex">
-            <img
-              src={face1}
-              alt="sample face"
-              className="h-10 w-10 rounded-full"
-            />
           </div>
         </div>
       </div>
