@@ -2,7 +2,7 @@ import Button from "../../components/Button.jsx";
 import heroImg from "../../asserts/hero-section/hero-section-img.png";
 function HeroSection() {
   return (
-    <div className="bg-orangeLight py-5 flex flex-col lg:flex-row md:items-center lg:items-start">
+    <div className="bg-orangeLight py-5 flex flex-col lg:flex-row md:items-center lg:items-start lg:justify-between">
       <div className="px-10">
         <h2 className="text-center lg:text-left text-[1.37rem] md:text-5xl font-bold md:font-medium text-textDark md:text-w-xl lg:max-w-lg md:mt-12">
           A healthy meal delivered to your door, every single day
@@ -18,12 +18,15 @@ function HeroSection() {
           <Button classname="w-full">Learn More</Button>
         </div>
         <div>
-          <div className="flex">
-          </div>
+          <div className="flex"></div>
         </div>
       </div>
       <div>
-        <img src={heroImg} alt="hero section" className="w-[40rem] lg:w-[43rem] md:w-[35rem] mt-5 md:mt-10 lg:mt-0" />
+        <img
+          src={heroImg}
+          alt="hero section"
+          className="w-[40rem] lg:w-[43rem] md:w-[35rem] mt-5 md:mt-10 lg:mt-0"
+        />
       </div>
     </div>
   );
