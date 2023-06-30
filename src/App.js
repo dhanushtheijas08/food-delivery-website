@@ -5,6 +5,7 @@ import MealsPage from "./pages/Meals/MealsPage.jsx";
 import PricePage from "./pages/Price/PricePage.jsx";
 import FeaturesPage from "./pages/Features/FeaturesPage.jsx";
 import extraFeatureIcon from "./asserts/check.png";
+import ContactPage from "./pages/Contact/ContactPage.jsx";
 function App() {
   return (
     <div className="App font-rubik">
@@ -13,6 +14,7 @@ function App() {
       <MealsPage />
       <PricePage />
       <FeaturesPage />
+      <ContactPage />
     </div>
   );
 }

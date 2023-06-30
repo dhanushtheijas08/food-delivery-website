@@ -9,9 +9,9 @@ function PricePage() {
         classname=""
       />
       <div className="flex w-full lg:justify-evenly flex-col md:flex-row md:justify-between items-center">
-        <PriceCard />
+        <PriceCard price={399} tag="STARTER" />
 
-        <PriceCard isPrimary />
+        <PriceCard isPrimary price={599} tag="COMPLETE" />
       </div>
 
       <p className="text-lg text-textLigth text-center mt-20">
