@@ -20,7 +20,7 @@ function MealsCard({foodName, foodImgPath}) {
     <HighLightText classname="text-white bg-[#4caf50]">Natural Booster</HighLightText>
     </div>
 
-    
+    <SubHeading classname="text-center lg:text-[1.8rem]">{foodName}</ SubHeading>
 
 
     <div className="flex flex-col gap-2">
