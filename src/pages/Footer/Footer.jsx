@@ -35,9 +35,15 @@ function Footer() {
 
         {/* Social Links */}
         <ol className="flex">
-          <li></li>
-          <li></li>
-          <li></li>
+          <li>
+            <a href="#"></a>
+          </li>
+          <li>
+            <a href="#"></a>
+          </li>
+          <li>
+            <a href="#"></a>
+          </li>
         </ol>
 
         <small>Copyright © 2023 by Omnifood, Inc. All rights reserved.</small>
