@@ -35,7 +35,7 @@ function FeaturesPage() {
     />
   ));
   return (
-    <div className="px-10 py-10 flex justify-between">
+    <div className="px-10 py-10 flex flex-col items-center gap-8 md:gap-8 lg:gap-0 md:flex-row justify-between">
       {featuresCardsRender}
     </div>
   );
