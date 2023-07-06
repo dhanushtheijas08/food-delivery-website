@@ -13,6 +13,7 @@ const workingData = [
     title: "Tell us what you like (and what not)",
     content:
       "Never again waste time thinking about what to eat! Well Menu.Com AI will create a 100% personalized weekly meal plan just for you.",
+    reverse: false,
   },
   {
     imgPath: img2,
@@ -20,6 +21,7 @@ const workingData = [
     title: "Approve your weekly meal plan",
     content:
       "Once per week, approve the meal plan generated for you by Omnifood AI. You can change ingredients, swap entire meals, or even add your own recipes.",
+    reverse: true,
   },
   {
     imgPath: img3,
@@ -27,10 +29,20 @@ const workingData = [
     title: "Receive meals at convenient time",
     content:
       "Best chefs in town will cook your selected meal every day, and we will deliver it to your door whenever works best for you. You can change delivery schedule and address daily!",
+    reverse: false,
   },
 ];
 
 function Working() {
+  const renderContentWIthImage = workingData.map((item) => (
+    <ContentWithImage
+      imgPath={item.imgPath}
+      number={item.number}
+      title={item.title}
+      content={item.content}
+      reverse={item.reverse}
+    />
+  ));
   return (
     <section className="px-10 py-10">
       <SectionHeading
@@ -38,12 +50,9 @@ function Working() {
         mainHeading="Your daily dose of health in 3 simple steps"
       />
 
-      <ContentWithImage
-        imgPath={imgPath}
-        number={number}
-        title={title}
-        content={content}
-      />
+      <div className="flex flex-col mt-10 space-y-10 md:space-y-0 ">
+        {renderContentWIthImage}
+      </div>
     </section>
   );
 }
