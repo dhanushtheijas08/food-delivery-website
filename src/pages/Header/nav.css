@@ -1,0 +1,32 @@
+.mobile-nav-bar {
+  width: 30px;
+  height: 2.1px;
+  background-color: black;
+  border-radius: 1px;
+}
+.mobile-nav-bar::before {
+  content: "";
+  width: 30px;
+  height: 2.1px;
+  background-color: black;
+  position: absolute;
+  bottom: 60%;
+  left: 50%;
+  border-radius: 1px;
+  transform: translate(-50%, -50%);
+}
+
+.mobile-nav-bar::after {
+  content: "";
+  width: 30px;
+  height: 2.1px;
+  border-radius: 1px;
+  background-color: black;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+}
+.nav-animation {
+}

@@ -11,7 +11,7 @@ import Working from "./pages/Working/Working.jsx";
 function App() {
   return (
     <div className="App font-rubik">
-      <HeaderPage className="" />
+      <HeaderPage />
       <HeroSection />
       <MealsPage />
       <Working />

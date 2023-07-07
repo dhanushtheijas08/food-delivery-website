@@ -32,10 +32,11 @@ function FeaturesPage() {
       heading={cardData.heading}
       content={cardData.content}
       borderColor={cardData.borderColor}
+      key={cardData.borderColor}
     />
   ));
   return (
-    <div className="px-10 py-10 flex flex-col items-center gap-8 md:gap-8 lg:gap-0 md:flex-row justify-between">
+    <div className="px-10 py-10 flex flex-col items-center gap-8 xl:gap-0 md:flex-row justify-between">
       {featuresCardsRender}
     </div>
   );

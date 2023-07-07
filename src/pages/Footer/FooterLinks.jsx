@@ -6,9 +6,13 @@ function FooterLinks({ footerLink }) {
     </li>
   ));
   return (
-    <div className="place-self-center">
-      <h3 className="text-2xl font-medium opacity-70">{footerLink.title}</h3>
-      <ol className="opacity-60  space-y-2.5 mt-3.5">{renderContent}</ol>
+    <div className={`mt-5 place-self-center`}>
+      <h3 className="text-sm md:text-xl lg:text-2xl font-medium opacity-70">
+        {footerLink.title}
+      </h3>
+      <ol className="opacity-60 space-y-1 mt-2 text-xs md:text-sm lg:text-base">
+        {renderContent}
+      </ol>
     </div>
   );
 }
