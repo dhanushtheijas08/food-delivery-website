@@ -6,7 +6,7 @@ function Footer() {
       title: "Contact us",
       links: [
         "623 Harrison St., 2nd Floor, San Francisco, CA 94107",
-        "415-201-6370 hello@omnifood.com",
+        "415-201-6370 hello@WellMenu.com",
       ],
     },
     {
@@ -15,7 +15,12 @@ function Footer() {
     },
     {
       title: "Company",
-      links: ["About Omnifood", "For Business", "Cooking partners", "Careers"],
+      links: [
+        "About Well Menu.Com",
+        "For Business",
+        "Cooking partners",
+        "Careers",
+      ],
     },
     {
       title: "Resources",
@@ -27,7 +32,7 @@ function Footer() {
   ));
 
   return (
-    <footer className="grid grid-cols-5 px-10">
+    <footer className="grid grid-cols-5 px-10 py-20 ">
       <div>
         <h2 className="text-textDark opacity-90 text-2xl md:text-2xl font-medium">
           Well Menu.com
@@ -46,7 +51,9 @@ function Footer() {
           </li>
         </ol>
 
-        <small>Copyright © 2023 by Omnifood, Inc. All rights reserved.</small>
+        <p className="text-sm">
+          Copyright © 2023 by Well Menu.Com, Inc. All rights reserved.
+        </p>
       </div>
       {renderFooter}
     </footer>
