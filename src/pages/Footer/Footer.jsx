@@ -33,7 +33,7 @@ function Footer() {
         Well Menu.com
       </h2>
       <ol className="flex">
-        <li>
+        {/* <li>
           <a href="#"></a>
         </li>
         <li>
@@ -41,7 +41,7 @@ function Footer() {
         </li>
         <li>
           <a href="#"></a>
-        </li>
+        </li> */}
       </ol>
 
       <p className="text-sm ">
