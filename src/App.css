@@ -4,6 +4,6 @@
 p {
   text-wrap: balance;
 }
-.text-balance, {
-  text-wrap: balance;
+button:hover.primary-btn {
+  background-color: #cf711f;
 }

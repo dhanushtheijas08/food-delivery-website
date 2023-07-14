@@ -12,7 +12,7 @@ function HeroSection() {
           healthy again. Tailored to your personal tastes and nutritional needs.
         </p>
         <div className="flex flex-col md:flex-row md:max-w-xl lg:max-w-md gap-3 md:gap-8 md:mx-auto lg:mx-0 mt-8">
-          <Button classname="text-xl w-full" primary>
+          <Button classname="text-xl w-full primary-btn" primary>
             Start eating well
           </Button>
           <Button classname="w-full">Learn More</Button>

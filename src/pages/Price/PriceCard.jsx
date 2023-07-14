@@ -28,7 +28,7 @@ function PriceCard({ isPrimary, price, tag }) {
       </div>
       {/* function Button({ children, primary, classname }) { */}
 
-      <Button primary classname="lg:mr-8">
+      <Button primary classname="lg:mr-8 primary-btn">
         Start eating well
       </Button>
     </div>
