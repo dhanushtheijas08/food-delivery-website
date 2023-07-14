@@ -1,14 +1,14 @@
 function FeatureCard({ iconPath, heading, content, borderColor }) {
   const border = `border-${borderColor}-300`;
   const background = `bg-${borderColor}-100`;
-  // console.log({ border });
-  // console.log({ background });
+  console.log({ border });
+  console.log({ background });
   return (
     <div
-      className={`w-fit space-y-1.5 border-4 ${border} py-5 px-2 lg:py-12 lg:px-5 rounded-2xl `}
+      className={`w-fit space-y-1.5 border-4 border-${borderColor}-300 py-5 px-2 lg:py-12 lg:px-5 rounded-2xl `}
     >
       <div
-        className={`${background} mb-5 rounded-full w-fit px-3.5 py-3.5 mx-auto`}
+        className={`bg-${borderColor}-100 mb-5 rounded-full w-fit px-3.5 py-3.5 mx-auto`}
       >
         <img src={iconPath} alt="icon" className="h-12" />
       </div>

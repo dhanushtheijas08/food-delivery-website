@@ -5,6 +5,7 @@ import FeatureCard from "./FeatureCard.jsx";
 function FeaturesPage() {
   const featureCardData = [
     {
+      id: "1",
       iconPath: icon2,
       heading: "Never cook again!",
       content:
@@ -12,6 +13,7 @@ function FeaturesPage() {
       borderColor: "indigo",
     },
     {
+      id: "2",
       iconPath: icon1,
       heading: "No waste",
       content:
@@ -19,6 +21,7 @@ function FeaturesPage() {
       borderColor: "sky",
     },
     {
+      id: "3",
       iconPath: icon3,
       heading: "Pause anytime",
       content:
@@ -26,18 +29,39 @@ function FeaturesPage() {
       borderColor: "green",
     },
   ];
-  const featuresCardsRender = featureCardData.map((cardData) => (
-    <FeatureCard
-      iconPath={cardData.iconPath}
-      heading={cardData.heading}
-      content={cardData.content}
-      borderColor={cardData.borderColor}
-      key={cardData.borderColor}
-    />
-  ));
+  // const featuresCardsRender = featureCardData.map((cardData) => (
+  //   <FeatureCard
+  //     key={cardData.id}
+  //     iconPath={cardData.iconPath}
+  //     heading={cardData.heading}
+  //     content={cardData.content}
+  //     borderColor={cardData.borderColor}
+  //   />
+  // ));
   return (
     <div className="px-10 py-10 flex flex-col items-center gap-8 xl:gap-0 md:flex-row justify-between">
-      {featuresCardsRender}
+      <FeatureCard
+        key={featureCardData.at(0).id}
+        iconPath={featureCardData.at(0).iconPath}
+        heading={featureCardData.at(0).heading}
+        content={featureCardData.at(0).content}
+        borderColor={featureCardData.at(0).borderColor}
+      />
+      <FeatureCard
+        key={featureCardData.at(1).id}
+        iconPath={featureCardData.at(1).iconPath}
+        heading={featureCardData.at(1).heading}
+        content={featureCardData.at(1).content}
+        borderColor={featureCardData.at(1).borderColor}
+      />
+      <FeatureCard
+        key={featureCardData.at(2).id}
+        iconPath={featureCardData.at(2).iconPath}
+        heading={featureCardData.at(2).heading}
+        content={featureCardData.at(2).content}
+        borderColor={featureCardData.at(2).borderColor}
+      />
+      {/* {featuresCardsRender} */}
     </div>
   );
 }

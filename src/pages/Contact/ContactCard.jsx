@@ -1,10 +1,9 @@
 import SubHeading from "../../components/SubHeading.jsx";
-import Button from "../../components/Button.jsx";
 import "./contact.css";
 
 function ContactCard() {
   return (
-    <div className="max-w-7xl bg-[#e67e22] grid grid-cols-1 md:grid-cols-3 rounded-2xl text-[#45260a] shadow-2xl">
+    <div className="max-w-7xl bg-[#e67e22] grid grid-cols-1 md:grid-cols-3 rounded-2xl text-[#45260a] shadow-lg">
       <div className="mx-auto px-5 md:px-10 py-6 md:py-14 col-span-1 md:col-span-2">
         <SubHeading classname="text-[#45260a] text-xl md:text-3xl lg:text-5xl font-semibold">
           Get your first meal free!
