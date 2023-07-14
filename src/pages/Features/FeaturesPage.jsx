@@ -1,7 +1,6 @@
 import icon1 from "../../asserts/features-section/infinity.png";
 import icon2 from "../../asserts/features-section/pause.png";
 import icon3 from "../../asserts/features-section/zerowaste.png";
-import FeatureCard from "./FeatureCard.jsx";
 function FeaturesPage() {
   const featureCardData = [
     {
@@ -29,7 +28,7 @@ function FeaturesPage() {
       borderColor: "green",
     },
   ];
-  // const featuresCardsRender = featureCardData.map((cardData) => (
+  // const featuresCardsRender = featureCardData.at(0).map((cardData) => (
   //   <FeatureCard
   //     key={cardData.id}
   //     iconPath={cardData.iconPath}
@@ -40,27 +39,63 @@ function FeaturesPage() {
   // ));
   return (
     <div className="px-10 py-10 flex flex-col items-center gap-8 xl:gap-0 md:flex-row justify-between">
-      <FeatureCard
-        key={featureCardData.at(0).id}
-        iconPath={featureCardData.at(0).iconPath}
-        heading={featureCardData.at(0).heading}
-        content={featureCardData.at(0).content}
-        borderColor={featureCardData.at(0).borderColor}
-      />
-      <FeatureCard
-        key={featureCardData.at(1).id}
-        iconPath={featureCardData.at(1).iconPath}
-        heading={featureCardData.at(1).heading}
-        content={featureCardData.at(1).content}
-        borderColor={featureCardData.at(1).borderColor}
-      />
-      <FeatureCard
-        key={featureCardData.at(2).id}
-        iconPath={featureCardData.at(2).iconPath}
-        heading={featureCardData.at(2).heading}
-        content={featureCardData.at(2).content}
-        borderColor={featureCardData.at(2).borderColor}
-      />
+      <div
+        className={`w-fit space-y-1.5 border-4  border-indigo-300 py-5 px-2 lg:py-12 lg:px-5 rounded-2xl `}
+      >
+        <div
+          className={`bg-indigo-100 mb-5 rounded-full w-fit px-3.5 py-3.5 mx-auto`}
+        >
+          <img
+            src={featureCardData.at(0).iconPath}
+            alt="icon"
+            className="h-12"
+          />
+        </div>
+        <label className="block text-center text-bold text-2xl md:text-xl lg:text-2xl xl:text-3xl text-textDark ">
+          {featureCardData.at(0).heading}
+        </label>
+        <p className="text-center text-textLigth text-sm lg:text-base max-w-xs">
+          {featureCardData.at(0).content}
+        </p>
+      </div>
+      <div
+        className={`w-fit space-y-1.5 border-4  border-sky-300 py-5 px-2 lg:py-12 lg:px-5 rounded-2xl `}
+      >
+        <div
+          className={`bg-sky-100 mb-5 rounded-full w-fit px-3.5 py-3.5 mx-auto`}
+        >
+          <img
+            src={featureCardData.at(1).iconPath}
+            alt="icon"
+            className="h-12"
+          />
+        </div>
+        <label className="block text-center text-bold text-2xl md:text-xl lg:text-2xl xl:text-3xl text-textDark ">
+          {featureCardData.at(1).heading}
+        </label>
+        <p className="text-center text-textLigth text-sm lg:text-base max-w-xs">
+          {featureCardData.at(1).content}
+        </p>
+      </div>
+      <div
+        className={`w-fit space-y-1.5 border-4  border-green-300 py-5 px-2 lg:py-12 lg:px-5 rounded-2xl `}
+      >
+        <div
+          className={`bg-green-100 mb-5 rounded-full w-fit px-3.5 py-3.5 mx-auto`}
+        >
+          <img
+            src={featureCardData.at(2).iconPath}
+            alt="icon"
+            className="h-12"
+          />
+        </div>
+        <label className="block text-center text-bold text-2xl md:text-xl lg:text-2xl xl:text-3xl text-textDark ">
+          {featureCardData.at(2).heading}
+        </label>
+        <p className="text-center text-textLigth text-sm lg:text-base max-w-xs">
+          {featureCardData.at(2).content}
+        </p>
+      </div>
       {/* {featuresCardsRender} */}
     </div>
   );
